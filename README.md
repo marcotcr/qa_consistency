@@ -28,6 +28,7 @@ python -m spacy download en_core_web_sm
 ## Generating implications:
 ### VQA
 ```python
+import qa_consistency
 import qa_consistency.implication
 gen = qa_consistency.implication.ImplicationsVQA()
 gen.implications('How many birds?', '3')
@@ -39,6 +40,7 @@ gen.implications('How many birds?', '3')
  ### SQuAD
 
 ```python
+import qa_consistency
 import qa_consistency.implication
 gen = qa_consistency.implication.ImplicationsSquad()
 passage = 'Kublai originally named his eldest son, Zhenjin, as the Crown Prince, \
