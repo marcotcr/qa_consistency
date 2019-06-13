@@ -17,11 +17,11 @@ cd qa_consistency
 virtualenv -p python3.6 env
 source env/bin/activate
 ```
-3. Run the following, replacing [gpu] with [cpu] if you don't have a gpu :
+3. Run the following, replacing [gpu] with [cpu] if you don't have a gpu.
 ```
 pip install cython numpy
 pip install benepar[gpu]
-pip install .
+pip install -e .
 cd qa_consistency
 git clone https://github.com/kelvinguu/qanli.git
 cd ..
@@ -32,6 +32,10 @@ python -m spacy download en_core_web_sm
 ## Generating implications:
 ### VQA
 ```python
+import tensorflow as tf
+config = tf.ConfigProto()
+config.gpu_options.allow_growth=True
+sess = tf.Session(config=config)
 import qa_consistency.implication
 gen = qa_consistency.implication.ImplicationsVQA()
 gen.implications('How many birds?', '3')
@@ -43,6 +47,10 @@ gen.implications('How many birds?', '3')
  ### SQuAD
 
 ```python
+import tensorflow as tf
+config = tf.ConfigProto()
+config.gpu_options.allow_growth=True
+sess = tf.Session(config=config)
 import qa_consistency.implication
 gen = qa_consistency.implication.ImplicationsSquad()
 passage = 'Kublai originally named his eldest son, Zhenjin, as the Crown Prince, \

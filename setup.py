@@ -10,6 +10,7 @@ setup(name='qa_consistency',
       author='Marco Tulio Ribeiro',
       author_email='marcotcr@gmail.com',
       license='MIT',
+      packages= find_packages(exclude=['js', 'node_modules', 'tests']),
       install_requires=[
         'cython',
         'numpy',
