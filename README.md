@@ -51,7 +51,7 @@ gen.implications('When did Zhenjin die?', '1285', passage)
 
 ## Evaluating the consistency of models
 ### VQA
-Download and extract precomputed implications [here](https://github.com/marcotcr/qa_consistency/blob/master/precomputed/vqa_imps.zip).
+Download and extract precomputed implications [here](https://github.com/marcotcr/qa_consistency/raw/master/precomputed/vqa_imps.zip).
 Create a folder for the consistency dataset (`CONSISTENCY_FOLDER`). Output your model predictions into a json file (`PRED_FILE`) in the VQA format. Then run:
 ```python
 import qa_consistency
@@ -78,7 +78,7 @@ print('Avg  : %.1f' % (100 * stats['all']))
 ```
 
 ### SQuAD
-Download and extract precomputed implications [here](https://github.com/marcotcr/qa_consistency/blob/master/precomputed/squad_imps.zip).
+Download and extract precomputed implications [here](https://github.com/marcotcr/qa_consistency/raw/master/precomputed/squad_imps.zip).
 Let `SQUAD_PATH` be a pointer to the original squad dev set json (dev-v1.1.json), `PRED_FILE` be the predictions json on the dev set from your model in the SQuAD official format (dictionary of id : answer). Run:
 ```python
 import qa_consistency
