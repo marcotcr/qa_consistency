@@ -1,0 +1,3 @@
+include qa_consistency/question_4gram.arpa
+include LICENSE
+include qa_consistency/preps.txt
