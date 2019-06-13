@@ -7,15 +7,15 @@ This repository contains code for creating implications and evaluating the consi
 
 
 ## Installation
-1. Create and activate a virtual environment, e.g.:
-```
-virtualenv -p python3.6 env
-source env/bin/activate
-```
-2. Clone this repository and cd to the folder:
+1. Clone this repository and cd to the folder:
 ```
 git clone git@github.com:marcotcr/qa_consistency.git
 cd qa_consistency
+```
+2. Create and activate a virtual environment, e.g.:
+```
+virtualenv -p python3.6 env
+source env/bin/activate
 ```
 3. Run the following :
 ```
