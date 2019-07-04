@@ -1,7 +1,7 @@
 # Evaluating consistency of Question-Answering Models
 This repository contains code for creating implications and evaluating the consistency of question-answering models, as described in the following paper:
 >[Are Red Roses Red? Evaluating Consistency of Question-Answering Models](http://homes.cs.washington.edu/~marcotcr/implication_acl19.pdf)  
-> Marco Tulio Ribeiro, Carlos Guestrin, Sameer Singh
+> Marco Tulio Ribeiro, Carlos Guestrin, Sameer Singh  
 > Association for Computational Linguistics (ACL), 2019
 
 
