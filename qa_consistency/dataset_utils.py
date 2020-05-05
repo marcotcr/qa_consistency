@@ -77,7 +77,7 @@ def generate_implication_vqa(original_dataset, original_preds_path, implication_
                 'question_type': source_map[source]
             }
             new_dataset.questions[new_idx] = {
-                'question': question,
+                'question': q,
                 'image_id': image_id,
                 'question_id': new_idx
             }
